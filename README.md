@@ -28,7 +28,7 @@ The project's main goal is to provide a secure and user-friendly authentication 
 
 9. **Swagger docs:** For a better understanding of the api endpoints and how they work documentation is provided.
 
-   # API Endpoints
+# API Endpoints
 
 1. **POST /user/register:** Create a new user account by providing the required information.
 2. **POST /user/login:** Log in with a registered account using email and password.
@@ -41,7 +41,7 @@ The project's main goal is to provide a secure and user-friendly authentication 
 9. **GET /auth/google/failure:** Page indicating an error during Google OAuth authentication.
 10. **/docs:** Api documentation done through swagger ui.
 
-    # Getting Started
+# Getting Started
 
 To use the authentication features of this project, follow these steps:
 
@@ -52,6 +52,11 @@ To use the authentication features of this project, follow these steps:
 3. Run the application using npm start or your preferred method.
 
 4. Explore the API endpoints to integrate authentication into your application.
+
+# Screenshot of docs
+
+![image](https://github.com/Ankur5522/jwt-authentication/assets/121228725/e661f660-fb43-406f-b073-7897c248e2c1)
+
 
     
 
