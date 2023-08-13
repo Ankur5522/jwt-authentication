@@ -7,10 +7,17 @@ import passport from "passport";
 import session from "express-session";
 import { isLoggedIn } from "./middleware.js";
 import dotenv from "dotenv/config.js";
+import YAML from "yamljs";
+import swaggerUi from "swagger-ui-express"
+
+const swaggerJsDocs = YAML.load('./swagger.yaml')
 
 const app = express();
 
+app.use('/docs',swaggerUi.serve, swaggerUi.setup(swaggerJsDocs));
+
 app.use(cors());
+app.use(express.json());
 app.use(
   session({
     secret: process.env.SESSION_SECRET,

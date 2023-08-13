@@ -8,7 +8,7 @@ import TokenBlacklist from "./models/blacklist.js";
 const secretKey = process.env.secretKey;
 
 export const auth = async (req, res, next) => {
-  const token = req.headers.authorization.split(" ")[1];
+  const token = req.headers.authorization?.split(" ")[1];
   const { oldPassword } = req.body;
   try {
     const { email } = jwt.verify(token, secretKey);
@@ -47,7 +47,6 @@ export const authUser = async (req, res, next) => {
 
 export const checkTokenExpiration = async (req, res, next) => {
   const token = req.headers.authorization?.split(" ")[1];
-
   try {
     if (token) {
       const decodedToken = jwt.decode(token);

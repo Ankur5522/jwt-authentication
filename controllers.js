@@ -58,12 +58,12 @@ export const register = async (req, res) => {
 
     res.status(201).json({ userData, token });
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: "Something went wrong with signup" });
   }
 };
 
 export const resetPassword = async (req, res) => {
+    console.log(req.headers)
   const { newPassword } = req.body;
   try {
     const email = req.email;
