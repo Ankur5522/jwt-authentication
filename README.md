@@ -26,6 +26,8 @@ The project's main goal is to provide a secure and user-friendly authentication 
 
 8. **Blacklist Tokens:** To enhance security, revoked or compromised tokens can be blacklisted, preventing unauthorized access.
 
+9. **Swagger docs:** For a better understanding of the api endpoints and how they work documentation is provided.
+
    # API Endpoints
 
 1. **POST /user/register:** Create a new user account by providing the required information.
@@ -37,6 +39,7 @@ The project's main goal is to provide a secure and user-friendly authentication 
 7. **GET /auth/google/callback:** Callback endpoint for Google OAuth 2.0 authentication.
 8. **GET /auth/google/success:** Success page after successful Google OAuth authentication.
 9. **GET /auth/google/failure:** Page indicating an error during Google OAuth authentication.
+10. **/docs:** Api documentation done through swagger ui.
 
     # Getting Started
 
